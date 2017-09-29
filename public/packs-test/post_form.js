@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/packs-test/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 198);
+/******/ 	return __webpack_require__(__webpack_require__.s = 199);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -786,7 +786,7 @@ module.exports = emptyObject;
 
 /***/ }),
 
-/***/ 198:
+/***/ 199:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -803,30 +803,46 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var NewButton = function (_Component) {
-	_inherits(NewButton, _Component);
+var PostForm = function (_Component) {
+	_inherits(PostForm, _Component);
 
-	function NewButton(props) {
-		_classCallCheck(this, NewButton);
+	function PostForm() {
+		_classCallCheck(this, PostForm);
 
-		return _possibleConstructorReturn(this, (NewButton.__proto__ || Object.getPrototypeOf(NewButton)).call(this, props));
+		return _possibleConstructorReturn(this, (PostForm.__proto__ || Object.getPrototypeOf(PostForm)).apply(this, arguments));
 	}
 
-	_createClass(NewButton, [{
+	_createClass(PostForm, [{
 		key: "render",
 		value: function render() {
 			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-				"button",
-				{ className: "post-button", onClick: this.props.openForm },
-				"New Post"
+				"form",
+				{ className: "post-form" },
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+					"label",
+					null,
+					"Title"
+				),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "text", name: "title" }),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+					"label",
+					null,
+					"Content"
+				),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "text", name: "content" }),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+					"button",
+					{ type: "submit", "class": "" },
+					"Submit post"
+				)
 			);
 		}
 	}]);
 
-	return NewButton;
+	return PostForm;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (NewButton);
+/* harmony default export */ __webpack_exports__["default"] = (PostForm);
 
 /***/ }),
 

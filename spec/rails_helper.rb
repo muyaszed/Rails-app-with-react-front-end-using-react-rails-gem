@@ -43,8 +43,8 @@ RSpec.configure do |config|
 
   config.before(:suite) do
     # compile front-end and load manifest
-    `bin/webpack`
-    Webpacker::Manifest.load
+    'bin/webpack'
+    # Webpacker::Manifest.load
   end
 
   config.before(:suite) do
